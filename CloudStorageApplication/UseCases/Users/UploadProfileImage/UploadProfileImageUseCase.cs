@@ -9,6 +9,13 @@ public class UploadProfileImageUseCase
     public void Execute(IFormFile image)
     {
         var fileStream = image.OpenReadStream();
-        var isRecognizableType = FileTypeValidator.IsImage(fileStream);
+        var isImage = FileTypeValidator.IsImage(fileStream);
+
+        if (!isImage)
+        {
+            throw new Exception("The file is not an image.");           
+        }
+
+
     }
 }
