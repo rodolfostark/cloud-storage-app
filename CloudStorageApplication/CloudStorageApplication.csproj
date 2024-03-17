@@ -6,4 +6,12 @@
     <Nullable>enable</Nullable>
   </PropertyGroup>
 
+    <ItemGroup>
+		<FrameworkReference Include="Microsoft.AspNetCore.App" />
+	</ItemGroup>
+
+    <ItemGroup>
+      <PackageReference Include="File.TypeChecker" Version="4.0.0" />
+    </ItemGroup>
+
 </Project>
