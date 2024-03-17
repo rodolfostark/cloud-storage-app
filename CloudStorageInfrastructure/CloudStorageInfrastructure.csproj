@@ -10,4 +10,8 @@
     <Folder Include="Storage\" />
   </ItemGroup>
 
+  <ItemGroup>
+    <ProjectReference Include="..\CloudStorageDomain\CloudStorageDomain.csproj" />
+  </ItemGroup>
+
 </Project>
